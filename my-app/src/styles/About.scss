@@ -1,0 +1,138 @@
+.about{
+    &-wrapper{
+      justify-content: space-between;
+      .deco{
+        width:10%;
+        height:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .deco-left{
+            width:200px;
+            height:200px;
+            margin-left:20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-item{
+              opacity:0.8;
+              width:100px;
+              height:100px;
+              animation: 4s spiral infinite;
+              background:#39AECF;
+            }
+          }
+        .deco-right{
+          width:80%;
+          height:100%;
+          position: relative;
+          overflow: hidden;
+          &-item{
+            width:100%;
+            height:300%;
+            animation:moveUp 20s linear infinite;
+            background: repeating-linear-gradient(
+              45deg,
+            #000,
+            #000 10px,
+            #39AECF 10px,
+            #39AECF 20px
+            );
+          }
+        }
+        
+      }
+    }
+  }
+
+
+
+.active-about{
+  &-wrapper{
+    justify-content: space-around;
+    .deco1{
+      left: -2%;
+      width:5%;
+      height:110%;
+      .deco-inner{
+        width:80%;
+        height:100%;
+        position: relative;
+        overflow: hidden;
+        &-item{
+          width:100%;
+          height:300%;
+          animation:moveUp 40s linear 1s infinite;
+          background: repeating-linear-gradient(
+            45deg,
+          #000,
+          #000 10px,
+          #39AECF 10px,
+          #39AECF 20px
+          );
+        }
+      }
+    }
+    .deco2{
+      width:10vh;
+      height:10vh;
+      top:-5%;
+      right:-2%;
+      .deco-inner{
+        width:90%;
+        height:90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        clip-path:circle(50% at 50% 50%);
+        background: #fff;
+        &-item{
+          width:100%;
+          height:100%;
+          clip-path:circle(25% at 50% 50%);
+          animation:movingEye 6s linear 3s infinite alternate;
+          background: #000;
+        }
+      }
+    }
+    .face{
+      width:33%;
+      height:90%;
+    }
+    .text{
+      width:50%;
+      height:70%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      padding-right:100px;
+      &-part{
+        width:100%;
+        height:25%;
+        div{
+          width:100%;
+          height:90%;
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-end;
+          img:nth-child(1){
+            width:35%;
+            height: 100%;
+          }
+          img:nth-child(2){
+            width:15%;
+            height: 70%;
+          }
+          img:nth-child(3){
+            width:15%;
+            height: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
